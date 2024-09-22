@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-Light-grey min-h-full flex justify-center items-center font-Poppins ">
+    <div id="card" class="relative bg-White w-[80%] md:w-[440px] p-4 md:p-8 pb-2 rounded-xl rounded-br-[120px] shadow-lg md:scale-125">
+        <div id="input-data" class="h-[88px] flex justify-center md:justify-start gap-3 md:gap-3  pb-12 md:pb-6 duration-700  "> 
+            <label class="error flex gap-1 flex-col text-[10px] font-extrabold text-Smokey-grey tracking-widest"> DAY
+                <input id="daysInput" type="number" placeholder="DD" class="ml-1 text-lg border-[1px] border-Light-grey w-16 md:w-[5.5rem] p-1 ps-2 md:ps-3 rounded-md text-Off-black placeholder:font-bold focus:outline-none focus:border-Purple">
+                <p id="invalidDay" class="opacity-0 text-Light-red font-semibold text-[9px] italic tracking-tight">Must be a valid day</p>
+            </label>
+            <label class="error flex gap-1 flex-col text-[10px] font-extrabold text-Smokey-grey tracking-widest"> MONTH
+                <input id="monthsInput" type="number" placeholder="MM" class="ml-1 text-lg border-[1px] border-Light-grey w-16 md:w-[5.5rem] p-1 ps-2 md:ps-3 rounded-md text-Off-black placeholder:font-bold focus:outline-none focus:border-Purple">
+                <p id="invalidMonth" class="opacity-0 text-Light-red font-semibold text-[9px] italic tracking-tight">Must be a valid month</p>
+
+            </label>
+            <label class="error flex gap-1 flex-col text-[10px] font-extrabold text-Smokey-grey tracking-widest"> YEAR
+                <input id="yearsInput" type="number" placeholder="YYYY" class="ml-1 text-lg border-[1px] border-Light-grey w-16 md:w-[5.5rem] p-1 ps-2 md:ps-3 rounded-md text-Off-black placeholder:font-bold focus:outline-none focus:border-Purple">
+                <p id="invalidYear" class="opacity-0 text-Light-red font-semibold text-[9px] italic tracking-tight">Must be a valid year</p>
+            </label>
+        </div>
+        <button id="button" class=" bg-Purple rounded-full p-2 absolute right-1/2 translate-x-1/2 top-[95px] md:right-14  hover:cursor-pointer hover:bg-Off-black duration-500"><img src="age-calculator-app-main/age-calculator-app-main/assets/images/icon-arrow.svg" alt=""></button>
+        <hr class=" border-Light-grey md:my-1 my-5">
+        <div id="count" class="my-12 md:mt-6 md:mb-0 ml-4 md:ml-0">
+            <div class="flex items-center flex-row">
+                <div id="years" class="text-[48px] leading-none text-Purple font-extrabold italic tracking-wider">--</div>
+                <p class="text-Off-black text-[40px] font-extrabold leading-none italic">years</p>
+            </div>
+            <div class="flex items-center flex-row">
+                <div id="months" class="text-[48px] leading-none text-Purple font-extrabold italic tracking-wider">--</div>
+                <p class="text-Off-black text-[40px] font-extrabold leading-none italic">months</p>
+            </div>
+            <div class="flex items-center flex-row">
+                <div id="days" class="text-[48px] leading-none text-Purple font-extrabold italic tracking-wider">--</div>
+                <p class="text-Off-black text-[40px] font-extrabold leading-none italic">days</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="js/index.js"> </script>
+</body>
+</html>
